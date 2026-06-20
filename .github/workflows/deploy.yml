@@ -41,11 +41,10 @@ jobs:
           cache: pnpm
 
       - name: Setup Pages
+        # NOTE: Pages must be enabled once in Settings → Pages → Source: GitHub
+        # Actions. The default GITHUB_TOKEN cannot create the Pages site via API,
+        # so `enablement: true` does not work on a fresh repo.
         uses: actions/configure-pages@v5
-        with:
-          # Enable Pages automatically on first run so we don't need the
-          # Settings → Pages UI toggle (requires the pages:write permission above).
-          enablement: true
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
