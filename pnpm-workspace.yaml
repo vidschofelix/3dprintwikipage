@@ -1,8 +1,12 @@
 # pnpm 11+ workspace settings (single-package workspace).
-# These two keys silence pnpm's strict preflight on `pnpm <script>` runs:
-#   - onlyBuiltDependencies: allows native postinstall for sharp/esbuild
-#   - verifyDepsBeforeRun: false stops pnpm from re-checking on every script
-onlyBuiltDependencies:
-  - esbuild
-  - sharp
+#
+# allowBuilds: pnpm 11 replaced `onlyBuiltDependencies` with this map. It
+# whitelists the native packages permitted to run lifecycle (postinstall)
+# build scripts. Without it, pnpm's `strictDepBuilds` (default true) makes
+# `pnpm install` exit non-zero in CI on "ignored build scripts".
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+# Stops pnpm re-verifying deps on every `pnpm <script>` invocation.
 verifyDepsBeforeRun: false
