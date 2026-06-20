@@ -1,0 +1,8 @@
+# pnpm 11+ workspace settings (single-package workspace).
+# These two keys silence pnpm's strict preflight on `pnpm <script>` runs:
+#   - onlyBuiltDependencies: allows native postinstall for sharp/esbuild
+#   - verifyDepsBeforeRun: false stops pnpm from re-checking on every script
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+verifyDepsBeforeRun: false

@@ -1,0 +1,25 @@
+{
+  "name": "3dprintwiki",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "3DPrint.Wiki — a community-curated knowledge base for 3D printing.",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "migrate:convert": "tsx migration/convert.ts",
+    "migrate:images": "tsx migration/optimize-images.ts",
+    "migrate:sidebar": "tsx migration/generate-sidebar.ts",
+    "migrate:all": "pnpm migrate:convert && pnpm migrate:images && pnpm migrate:sidebar",
+    "check:links": "tsx migration/link-check.ts",
+    "clean:links": "tsx migration/clean-links.ts",
+    "links:inventory": "tsx migration/link-inventory.ts"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "tsx": "^4.19.2",
+    "sharp": "^0.33.5"
+  },
+  "packageManager": "pnpm@11.1.1"
+}

@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# VitePress build output
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Migration scratch files (logs, reports regenerated on demand)
+migration/broken-links.txt
+migration/orphan-media.txt
+migration/.cache/
+
+# Editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
+
+# Source backup of the original DokuWiki instance — preserved locally only,
+# not pushed to GitHub. See migration/triage.md for what we migrated.
+backup/
