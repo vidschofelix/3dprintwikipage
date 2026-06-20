@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           # Full history so VitePress `lastUpdated` reflects real commit dates.
           fetch-depth: 0
@@ -35,13 +35,17 @@ jobs:
           version: 11.1.1
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 24
           cache: pnpm
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Enable Pages automatically on first run so we don't need the
+          # Settings → Pages UI toggle (requires the pages:write permission above).
+          enablement: true
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
