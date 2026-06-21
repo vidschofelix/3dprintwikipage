@@ -5,7 +5,7 @@ maintaining or upgrading the Wanhao Duplicator 6. The stock fasteners are low
 quality and worth replacing with proper hardware.
 
 > The product links below were collected by the original wiki community around
-> 2017–2018 and may be out of date — treat them as examples of what to look for
+> 2017–2018 and may be out of date; treat them as examples of what to look for
 > rather than current recommendations.
 
 ## Fasteners & hardware
@@ -13,7 +13,7 @@ quality and worth replacing with proper hardware.
 - [Metric ball-head hex key set](https://www.amazon.com/gp/product/B009ODV0OE)
 - [18-8 stainless steel flat head screw assortment](https://www.mcmaster.com/92740a111/)
 - [Set/grub screw assortment kit, M3–M8, 304 stainless (200 pcs)](https://www.amazon.com/gp/product/B06XSG93HS)
-- [18-8 stainless steel wing nut](https://www.mcmaster.com/94545a210/) — replacement for the stock yellow thumbscrews
+- [18-8 stainless steel wing nut](https://www.mcmaster.com/94545a210/): replacement for the stock yellow thumbscrews
 - [Brass knurled threaded inserts, M2/M3/M4 (250 pcs)](https://www.amazon.com/gp/product/B0784VYCYY)
 
 ## Tools

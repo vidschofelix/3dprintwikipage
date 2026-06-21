@@ -1,6 +1,6 @@
 # Parts
 
-Cross-printer hardware references — components that show up across many machines rather than belonging to a single manufacturer.
+Cross-printer hardware references: components that show up across many machines rather than belonging to a single manufacturer.
 
 ## Hotends
 

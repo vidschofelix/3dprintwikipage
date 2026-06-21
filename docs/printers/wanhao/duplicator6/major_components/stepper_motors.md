@@ -44,5 +44,5 @@ Max. axial force	10N
 ----
 
 #### References
-- [bohongmotor.com — 42BYGHB-4018](http://eng.bohongmotor.com/product/42BYGHB_4018.html)
+- [bohongmotor.com: 42BYGHB-4018](http://eng.bohongmotor.com/product/42BYGHB_4018.html)
 - [Wanhao D6 owners group (Facebook)](https://www.facebook.com/groups/470637449795481?view=permalink&id=901398366719385)

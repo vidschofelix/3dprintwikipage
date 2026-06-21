@@ -7,7 +7,7 @@ I've never worked with a wiki before, so this may end up being a relatively piec
 ## Introduction
 RepRap Arduino Mega Pololu Shield (RAMPS) is the standard of development for the open source replicating rapid prototyper (RepRap) movement. Though there may be many different approaches to the way this is done, largely RAMPS is the primary hardware backend for many, if not all 3D printers today within the consumer DIY market at the very least.
 
-This guide is my contribution to the open source movement of the 3D market space, since I fully believe—along with many, many others—that the only way to move forward is to share what should be commonplace knowledge. Taking that, you—and I do mean you, the reader—should move forward and innovate. Pay it forward and all that jazz. ;-)
+This guide is my contribution to the open source movement of the 3D market space, since I fully believe (along with many, many others) that the only way to move forward is to share what should be commonplace knowledge. Taking that, you (and I do mean you, the reader) should move forward and innovate. Pay it forward and all that jazz. ;-)
 
 A few things worth mentioning before we continue:
 
@@ -20,7 +20,7 @@ A few things worth mentioning before we continue:
   - That being said, I’ll start right off the bat with giving credit to 3D Printer Czar for their work on the RAMPS 1.4 Assembly Guide. Without it, I would’ve been stuck up the creek without a paddle. It’s a very well-written guide, though I’ll admit I glossed over a lot of stuff.
 
 ## Why would I want to do this?
-One question that seems to pop up a lot about this particular guide—and the thing that caused me to make the jump myself—is, “Why would I want to do this?”
+One question that seems to pop up a lot about this particular guide (and the thing that caused me to make the jump myself) is, “Why would I want to do this?”
 
 Since a picture is worth a thousand words, here’s a picture to show you why I did it:
 
@@ -56,7 +56,7 @@ So, the list of things you need to move forward:
 Cost: Varies. I picked mine up for around $180.00 USD from the link given earlier.
 - RAMPS equipment. With this, you can either source the Polulu Shield, Arduino MEGA board, and other parts yourself, or you can go with a kit for a quicker transition. I’d personally recommend the latter option, but that’s because I believe that the destination is more important than the journey (and also, I’m lazy).
   - Cost: Varies. In this case, the one I personally went with was this one from Amazon. At the time of this writing, it’s going for a mere $34.68 USD, and it’s served me well for the past couple of months. ALSO, if you’re going to shop on Amazon, I’d recommend checking out Amazon Smile. It lets you give a portion of your purchase to the charity of your choice. I do smile a bit more when I purchase through Smile, so… please do the same.
-- Additional hardware. It goes without saying, but you’ll need to have some tools to make the jump. They aren’t mandatory, but if you’re serious about 3D printing—and I hope you are!—this will pay dividends moving forward. My specific recommendations for adapting your kit to a RAMPS setup are:
+- Additional hardware. It goes without saying, but you’ll need to have some tools to make the jump. They aren’t mandatory, but if you’re serious about 3D printing (and I hope you are!) this will pay dividends moving forward. My specific recommendations for adapting your kit to a RAMPS setup are:
   - DuPont connectors. This is the name of those li’l black ends you… that… well, that… I’m bad at describing this. So, I’ll use a picture instead:
 ![](/images/reprap/electronics/dupont_connector_on_a_cable.jpg)
   - Yes, that thing. There are kits on Amazon (I’m a huge fan of theirs; you’ll learn this quickly) that sell these connectors at amazingly low cost. The one that I’d recommend is this one here, which contains 425 pieces for $10.99 USD. Hilitchi also has other kits going upwards of 1,000 pieces (which is what I got, but I’m a nerd) for $16.87 USD.
@@ -76,7 +76,7 @@ Cost: Varies. The ones I linked are (at the time of this writing) $12.57 USD.
 1. Go to the Arduino website and download the Arduino IDE (Integrated Development Environment; link to the page giving you the choice of platforms is here). Once downloaded, install it. On Windows systems at the very least, you’ll also be prompted to install the Arduino drivers as well. Though I didn’t notice the same thing on my iMac, it may apply to other systems. Either way, this is key. You need to have those [drivers](https://softwaretested.com/drivers/) installed to be able to interact with your Arduino MEGA board and upload the firmware.
 Go to the Marlin GitHub repository and download the latest version of Marlin (from the link provided, click Clone or download > Download ZIP). You don’t have to do anything extra with this just yet; just unzip it and stand by.
   - Though you don’t have to do anything extra, I’ve also taken the liberty of posting my MARLIN Configuration files for you to download. These files will need to be unzipped to the “Marlin” directory of the Marlin firmware you downloaded earlier, and overwrite the pre-existing files. PLEASE BACKUP YOUR ORIGINALS BEFORE DOING THIS. Also note that these files are only guaranteed to work for the Anet A8 specifically, but may work for Prusa i3 clones in general.
-1. Once you’ve got all the hardware you need, go and check out that RAMPS 1.4 Assembly Guide I mentioned earlier. No joke, it’ll walk you through the vast majority of what you need to know for getting your RAMPS equipment assembled. I’d re-write it, but honestly… as far as wheels go, it’s pretty damn good—so I won’t reinvent it just yet. Using that guide, I was able to get through my RAMPS assembly without issue.
+1. Once you’ve got all the hardware you need, go and check out that RAMPS 1.4 Assembly Guide I mentioned earlier. No joke, it’ll walk you through the vast majority of what you need to know for getting your RAMPS equipment assembled. I’d re-write it, but honestly… as far as wheels go, it’s pretty damn good, so I won’t reinvent it just yet. Using that guide, I was able to get through my RAMPS assembly without issue.
 1. It’s at this point where you’ll want to cut off the original ends of the cable that connected to the stock board of your printer and replace them with the DuPont connectors. Though the original connectors may work just as well as the DuPont connectors, RAMPS setups are better off with DuPont connectors since you don’t have to worry about the nibs from the original connectors rubbing against other components.
 1. Once the connectors are made (if you chose to go ahead with it) and the RAMPS boards are set up with the various jumpers and components added, connect your stepper motors and other leads to their respective connection on the RAMPS boards. Don’t worry too much about the orientation of the wires just yet; if you get them wrong you can always change the firmware settings or simply flip the connectors around.
 1. Using the USB cable provided in your RAMPS setup, connect your RAMPS board to your computer (you don’t need to have power supplied to the board via the PSU; your computer will provide all you need for this step) and launch the Arduino IDE you installed earlier by double-clicking the Marlin.ino file within the Marlin firmware directory you unzipped the firmware to earlier (step 2). Note: As I said in the introduction, I prefer using Macs. The screenshots may not be on a Windows platform, but the menu structure is the same on both platforms.
@@ -138,12 +138,12 @@ The fix is a simple one: In your pins_RAMPS.h file, modify the lines shown above
 
 ```
 
-To be clear, you don’t need to add the comment (the line marked off with the two forward slashes), but I recommend doing this in the event you want to revert back in the future—it’s great practice to keep the defaults around somewhere, and where better than the file to which they belong?
+To be clear, you don’t need to add the comment (the line marked off with the two forward slashes), but I recommend doing this in the event you want to revert back in the future; it’s great practice to keep the defaults around somewhere, and where better than the file to which they belong?
 
 And that’s it! One simple change eliminated your pin conflict!
 
 ## Lessons Learned
-Along the way with the RAMPS upgrade of my Anet A8 system—as well as the self-sourced built of MZBot’s VORON CoreXY 3D printer—I learned a great deal about the intricacies of the RAMPS system, as well as the associated pitfalls. Here are some of the more important/”seemingly minor but actually pretty damn important” bits I learned along the way:
+Along the way with the RAMPS upgrade of my Anet A8 system (as well as the self-sourced built of MZBot’s VORON CoreXY 3D printer), I learned a great deal about the intricacies of the RAMPS system, as well as the associated pitfalls. Here are some of the more important/”seemingly minor but actually pretty damn important” bits I learned along the way:
 
 ### Stepper Driver Orientation: It’s Important
 It’s very important that you pay attention to polarity; that’s not just something that you need to be concerned with in RAMPS, but electronics in general. To that end, the orientation of your stepper motors needs to be on point when you’re inserting them into your board. Unlike with CPUs in a custom-build desktop computer, stepper drivers can fit into their DuPont slots in either orientation, and 3D Printer Czar’s RAMPS assembly guide doesn’t cover all stepper drivers, just the A4498 drivers that come with the majority of RAMPS kits you can purchase these days.
@@ -161,7 +161,7 @@ Final lesson on this particular problem? Pay attention to detail. Do not skip ah
 Ever.
 
 ## Where to go from here
-This document is (if I do say so myself) a great start to set you off in the right direction, but with RAMPS—as limited as it may be with other offerings such as Smoothieware and the like—having so much more to see and do with regards to both the hardware and the software.
+This document is (if I do say so myself) a great start to set you off in the right direction, but with RAMPS (as limited as it may be with other offerings such as Smoothieware and the like) having so much more to see and do with regards to both the hardware and the software.
 
 What I would personally recommend doing is opening up your Marlin sketch and take a look through each of the individual files that comprises it. Get as familiar as possible with it, and make tweaks to see how that improves your overall printing. Marlin itself is written in the C++ programming language, and can be extended upon as needed; what’s more, Marlin has many different offshoots, including the Repetier-Firmware which has an incredible Configuration.h file generator available.
 
@@ -176,7 +176,7 @@ This document, since its original creation, has continued to grow in content and
 Honestly, just pay it forward. If you learned anything from this guide, pass it on to friends who may be looking for the same kinda assistance. If you want more tailored help with your hardware, you can always donate to terrance.shaw@gmail.com via PayPal, but I can’t guarantee any kind of timeline with that route unless you donate enough for me to get a new set of hardware since… well, this is a relatively expensive hobby. I get new toys when I can realistically afford the massive wallet trauma, but otherwise… well, I’m just a regular middle-class dude getting by as best I can.
 
 ## Acknowledgements
-Nobody knows things without someone first teaching them. Here are the acknowledgements for those that have—directly or otherwise—contributed to the creation of this guide.
+Nobody knows things without someone first teaching them. Here are the acknowledgements for those that have (directly or otherwise) contributed to the creation of this guide.
 
 Am I missing someone? Please let me know so that I can give proper credit!
 

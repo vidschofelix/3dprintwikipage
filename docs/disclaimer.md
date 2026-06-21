@@ -2,7 +2,7 @@
 
 The information on **3DPrint.Wiki** is contributed by volunteers from around the world. It is provided **as-is, without warranty of any kind**, express or implied.
 
-3D printers involve **high temperatures, moving parts, and mains voltage**. Any modification you perform on a printer — wiring, firmware flashing, MOSFET installation, mechanical changes — is done at your own risk and may damage your hardware, void your warranty, or cause fire or injury.
+3D printers involve **high temperatures, moving parts, and mains voltage**. Any modification you perform on a printer (wiring, firmware flashing, MOSFET installation, mechanical changes) is done at your own risk and may damage your hardware, void your warranty, or cause fire or injury.
 
 Always:
 

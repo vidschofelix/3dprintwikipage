@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 3DPrint.Wiki
   text: Knowledge for the printers we run.
-  tagline: A community-curated reference for 3D printing — printer-specific guides, firmware notes, mods, and the things we wish we'd known sooner.
+  tagline: A community-curated reference for 3D printing, with printer-specific guides, firmware notes, mods, and the things we wish we'd known sooner.
   image:
     src: /logo.png
     alt: 3DPrint.Wiki
@@ -20,6 +20,10 @@ features:
   - title: Bambu Lab P1P
     details: Guides, upgrades, mods, calibration. The flagship modern page.
     link: /printers/bambu-lab/p1p
+    linkText: Open page
+  - title: Snapmaker U1
+    details: CoreXY, Klipper-based multi-color printer with a 4-toolhead SnapSwap tool changer.
+    link: /printers/snapmaker/u1
     linkText: Open page
   - title: Anet A8
     details: Assembly, safety upgrades, auto-bed-leveling, firmware. The classic deep-dive.
@@ -45,7 +49,7 @@ features:
 
 ## Why a wiki?
 
-Discord, subreddits, and forums move on. Answers get lost in the scroll. This wiki catalogues the durable information — what a printer is, what breaks on it, how to fix it, and which mods are worth the time.
+Discord, subreddits, and forums move on. Answers get lost in the scroll. This wiki catalogues the durable information: what a printer is, what breaks on it, how to fix it, and which mods are worth the time.
 
 ## Contributing
 

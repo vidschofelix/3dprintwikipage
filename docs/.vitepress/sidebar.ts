@@ -216,6 +216,16 @@ export const sidebar: DefaultTheme.Sidebar = {
           ],
         },
         {
+          text: "Snapmaker",
+          collapsed: true,
+          items: [
+            {
+              text: "Snapmaker U1",
+              link: "/printers/snapmaker/u1",
+            },
+          ],
+        },
+        {
           text: "Tronxy",
           collapsed: true,
           items: [

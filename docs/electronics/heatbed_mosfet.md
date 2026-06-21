@@ -1,7 +1,7 @@
 # Howto Connect your Hotbed (and or extruder) to a Mosfet
 
 ::: warning
-I have seen people trying to (re-)sell these MOSFET units with a HUGE profit on eBay while referring to this page for installation schematics. Go shop around — they don't need to be more expensive than around €5 to €10 ($5 to $10) incl. PP.
+I have seen people trying to (re-)sell these MOSFET units with a HUGE profit on eBay while referring to this page for installation schematics. Go shop around, they don't need to be more expensive than around €5 to €10 ($5 to $10) incl. PP.
 :::
 
 [Click here for an example of some prices](https://www.banggood.com/MOSFET-High-Power-Heated-Bed-Expansion-Power-Module-MOS-Tube-for-3D-Printer-Prusa-i3-Anet-A8A6-p-1356434.html)
@@ -16,7 +16,7 @@ All the current for the bed has to go through the one connector in addition to a
 *connector and corresponding plug*
 ![plug](/images/reprap/electronics/plug.jpg)
 
-> EDIT: the latest version of the control board has newer/different type connectors fitted — they are safer, but if not connected properly even they CAN and WILL melt. Remember: transition resistance in combination with high(er) currents equals heat development.
+> EDIT: the latest version of the control board has newer/different type connectors fitted; they are safer, but if not connected properly even they CAN and WILL melt. Remember: transition resistance in combination with high(er) currents equals heat development.
 
 Removing the hotbed current from the mainboard significantly reduces stress on your mainboard (connectors).
 
@@ -32,7 +32,7 @@ Another benefit: it will allow you to use a second PSU for bed power (12 or 24 v
 
 > Note: Some MOSFETs are sold with the signal wire, some without. Check if you need to buy a separate one.
 
-3D Printer Parts General Add-on Heated Bed Power Expansion Module — [on banggood.com](https://www.banggood.com/MOSFET-High-Power-Heated-Bed-Expansion-Power-Module-MOS-Tube-for-3D-Printer-Prusa-i3-Anet-A8A6-p-1356434.html)
+3D Printer Parts General Add-on Heated Bed Power Expansion Module, [on banggood.com](https://www.banggood.com/MOSFET-High-Power-Heated-Bed-Expansion-Power-Module-MOS-Tube-for-3D-Printer-Prusa-i3-Anet-A8A6-p-1356434.html)
 
 > **Question:** Can I use a mechanical relay too?
 >
@@ -60,7 +60,7 @@ A special bracket to mount your ANET mainboard and 1 MOSFET unit you can find he
 
 ### For the signal wire there has been some confusion
 
-Some people claim polarity matters — **they are right sometimes**, some MOSFETs are polarity sensitive.
+Some people claim polarity matters: **they are right sometimes**, some MOSFETs are polarity sensitive.
 
 For the MOSFET unit shown in the 2 pictures here, **POLARITY DOES NOT MATTER**. Check them side by side with the signal wire connected both ways.
 
@@ -107,10 +107,10 @@ There are a lot of combinations possible.
 **1 × 12 volts PSU**
 > NOTE: This is the standard setup.
 
-**2 × 12 volts PSU** — of the one used for the heatbed you could raise the voltage to circa 14 volts.
+**2 × 12 volts PSU**: of the one used for the heatbed you could raise the voltage to circa 14 volts.
 > NOTE: If you have an ATX power supply laying around, use the "stock PSU" for the hotbed and the ATX for the control board and stepper motors.
 
-**Since there are a million different ATX PSUs, I will give some "general" things for you to consider only — no specifics about ONE PSU.**
+**Since there are a million different ATX PSUs, I will give some "general" things for you to consider only, no specifics about ONE PSU.**
 
 ![ATX PSU label](/images/reprap/electronics/20170420_142010.jpg)
 
@@ -124,7 +124,7 @@ Another way is to just short the green (PS-ON) and black (GROUND) wire in the 20
 
 ![ATX PSU always-on](/images/reprap/electronics/atx_psu.jpg)
 
-**1 × 12 volts + 1 × 24 volts** — the 12 volts one is used to power the mainboard, extruder and stepper motors; the 24 volts powers the heat bed (through the MOSFET).
+**1 × 12 volts + 1 × 24 volts**: the 12 volts one is used to power the mainboard, extruder and stepper motors; the 24 volts powers the heat bed (through the MOSFET).
 > NOTE: Make sure you use the 24 volts connections on the heater.
 
 ### 12 volts PSU + 24 volts PSU combination
@@ -145,17 +145,17 @@ If wired for 24 volts, the element is connected from both ends only, resulting i
 
 > V = R × I (Voltage equals current multiplied by resistance), P = V × I (Power output equals voltage multiplied by current)
 
-**HOTBED 12 Volt connection — resistance between 1.0–1.2 Ω (work with 1.1 Ω)**
+**HOTBED 12 Volt connection: resistance between 1.0–1.2 Ω (work with 1.1 Ω)**
 
 - I = V/R → the current drawn at 12 Volts is 12 / 1.1 = 10.9 Ampere
 - P = V×I → power output at 12 Volts is 12 × 10.9 = 130.9 Watts
 
-**HOTBED 14 Volts connection — resistance between 1.0–1.2 Ω (work with 1.1 Ω)**
+**HOTBED 14 Volts connection: resistance between 1.0–1.2 Ω (work with 1.1 Ω)**
 
 - I = V/R → the current drawn at 14 Volts is 14 / 1.1 = 12.7 Ampere
 - P = V×I → power output at 14 Volts is 14 × 12.7 = 178.2 Watts
 
-**HOTBED 24 volts connection — resistance between 3–3.4 Ω (work with 3.2 Ω)**
+**HOTBED 24 volts connection: resistance between 3–3.4 Ω (work with 3.2 Ω)**
 
 - I = V/R → the current drawn at 24 Volts is 24 / 3.2 = 7.5 Ampere
 - P = V×I → power output at 24 Volts is 24 × 7.5 = 180.0 Watts
